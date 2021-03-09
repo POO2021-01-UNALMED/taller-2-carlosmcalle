@@ -29,7 +29,7 @@ public class Auto {
 				}
 			}
 		}
-		if((motor.registro == registro) && registroIgual) {
+		if((motor.registro == this.registro) && registroIgual) {
 			return "Auto original";
 		}
 		else {
