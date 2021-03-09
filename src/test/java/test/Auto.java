@@ -19,7 +19,7 @@ public class Auto {
 		return numeroAsientos;
 	}
 	
-	String verificarIntegridad() {
+	public String verificarIntegridad() {
 		boolean registroIgual = true;
 		
 		for(int i = 0; i< asientos.length; i++) {
