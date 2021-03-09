@@ -22,14 +22,14 @@ public class Auto {
 	String verificarIntegridad() {
 		boolean registroIgual = true;
 		
-		for(Asiento asiento : asientos) {
-			if(asiento != null) {
-				if(asiento.registro != registro) {
+		for(int i = 0; i< asientos.length; i++) {
+			if(asientos[i] != null) {
+				if(asientos[i].registro != registro) {
 					registroIgual = false;
 				}
 			}
 		}
-		if((motor.registro == this.registro) && registroIgual) {
+		if((motor.registro == registro) && registroIgual) {
 			return "Auto original";
 		}
 		else {
