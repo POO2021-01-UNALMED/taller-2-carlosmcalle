@@ -20,12 +20,12 @@ public class Auto {
 	}
 	
 	String verificarIntegridad( ) {
-		if (motor.registro == this.registro) {
+		if (motor.registro == registro) {
 			return "Auto original";
 		}
 		
 		for (Asiento asiento : asientos) {
-			if (asiento.registro == this.registro) {
+			if (asiento.registro == registro) {
 				return "Auto original";
 			}
 		}
